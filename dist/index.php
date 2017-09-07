@@ -18,19 +18,19 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 // Our web handlers
 
 $app->get('/', function() use($app) {
-  return $app['twig']->render('dispatch.html');
+  return $app['twig']->render('dispatch.twig');
 });
 
 $app->get('/manifesto', function() use($app) {
-  return $app['twig']->render('manifesto.html');
+  return $app['twig']->render('manifesto.twig');
 });
 
 $app->get('/usines', function() use($app) {
-  return $app['twig']->render('usines.html');
+  return $app['twig']->render('usines.twig');
 });
 
 $app->get('/histoire', function() use($app) {
-  return $app['twig']->render('histoire.html');
+  return $app['twig']->render('histoire.twig');
 });
 
 $app->run();
