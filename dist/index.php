@@ -18,7 +18,7 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 // Our web handlers
 
 $app->get('/', function() use($app) {
-  return $app['twig']->render('index.html');
+  return $app['twig']->render('dispatch.html');
 });
 
 $app->get('/manifesto', function() use($app) {
