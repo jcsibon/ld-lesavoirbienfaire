@@ -2,6 +2,52 @@
 
 {% block content %}
 
-usines
+<style>
+.textArticle {
+   max-width: initial;
+}
+
+.blockPresentation.article {
+    margin: 0;
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+   .tablet_view, .desktop_view {
+       display: none;
+   }
+   .mobile_view {
+       display: block;
+   }
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+   .mobile_view, .desktop_view {
+       display: none;
+   }
+   .tablet_view {
+       display: block;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .mobile_view, .tablet_view {
+       display: none;
+   }
+   .desktop_view {
+       display: block;
+   }
+}
+
+</style>
+<div class="desktop_view">
+<img src="https://www.lapeyre.fr/img/contrib/freehtml/pages/2017/la-fabrication-francaise/desktop.jpg" width="100%"/>
+</div>
+<div class="mobile_view">
+<img src="https://www.lapeyre.fr/img/contrib/freehtml/pages/2017/la-fabrication-francaise/mobile.jpg" width="100%"/>
+</div>
+<div class="tablet_view">
+<img src="https://www.lapeyre.fr/img/contrib/freehtml/pages/2017/la-fabrication-francaise/tab.jpg" width="100%"/>
+</div>
 
 {% endblock %}
