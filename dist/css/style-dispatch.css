@@ -1313,7 +1313,7 @@ Template responsive style
 body {
   font-style: 14px; }
   body p {
-    line-height: 18px !important; }
+    line-height: 18px; }
 
 /*HERO*/
 .video_background {
@@ -1746,3 +1746,490 @@ body {
     color: white;
     text-transform: uppercase;
     padding: 0 2px; }
+
+.usine .row {
+  margin: 0 !important; }
+.usine .video_background {
+  background-image: url(../img/hero_usine.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 550px;
+  background-position: center;
+  top: 30px; }
+  @media screen and (min-width: 768px) and (max-width: 1000px) {
+    .usine .video_background {
+      height: 895px; } }
+  @media screen and (min-width: 1000px) {
+    .usine .video_background {
+      height: 768px; } }
+.usine .usine-img {
+  text-align: right; }
+.usine .title {
+  top: 30px;
+  padding: 20px; }
+  @media screen and (min-width: 768px) {
+    .usine .title {
+      top: 190px; } }
+  .usine .title p {
+    color: #FFF;
+    line-height: 25px !important; }
+  .usine .title .france_map {
+    width: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .usine .title span {
+    background-color: #ea0028;
+    padding: 0 2px;
+    text-align: right; }
+  .usine .title .span-one {
+    text-align: right; }
+.usine h1 {
+  width: 302px; }
+  @media screen and (min-width: 768px) {
+    .usine h1 {
+      width: 100%; } }
+.usine h3 {
+  font-family: 'DIN Condensed';
+  font-size: 40px;
+  line-height: 40px;
+  color: #404040; }
+  @media screen and (min-width: 768px) {
+    .usine h3 {
+      width: 520px;
+      margin-bottom: 20px;
+      font-size: 55px;
+      line-height: 55px; } }
+.usine p {
+  color: #2B2B2B;
+  line-height: 25px;
+  /*  @media screen and (min-width: 1280px) {
+       width: 30%;
+    }*/ }
+  @media screen and (min-width: 768px) {
+    .usine p {
+      margin-bottom: 40px; } }
+.usine .number {
+  font-family: 'DIN Condensed';
+  font-weight: bold;
+  font-size: 80px;
+  color: #e4ddd8;
+  text-align: left;
+  margin-bottom: 0;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .usine .number {
+      position: relative;
+      top: 0; } }
+  @media screen and (min-width: 1280px) {
+    .usine .number {
+      font-size: 120px; } }
+.usine .scroll {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .usine .scroll {
+      display: block; } }
+@media screen and (min-width: 768px) {
+  .usine .scroll {
+    position: absolute;
+    text-align: center;
+    top: 834px;
+    width: 100%; } }
+  @media screen and (min-width: 768px) and (min-width: 1000px) {
+    .usine .scroll {
+      top: 692px; } }
+@media screen and (min-width: 768px) {
+    .usine .scroll p {
+      color: #FFF;
+      bottom: 0px;
+      position: relative;
+      text-transform: uppercase;
+      font-family: 'DIN Condensed';
+      font-size: 10px; }
+    .usine .scroll .line {
+      position: relative;
+      bottom: 10px;
+      margin: 0 auto;
+      border: 1px solid red;
+      width: 40px;
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg); } }
+
+.production-francaise {
+  padding: 20px 5px;
+  background-color: #F8F8F8; }
+  @media screen and (min-width: 1280px) {
+    .production-francaise {
+      padding-top: 70px; } }
+  .production-francaise p {
+    line-height: 25px !important; }
+    @media screen and (min-width: 1280px) {
+      .production-francaise p {
+        width: 70%; } }
+  .production-francaise span {
+    font-family: 'Belinda';
+    color: #2B2B2B;
+    font-size: 16px; }
+  .production-francaise .row-production {
+    margin-bottom: 40px !important; }
+    @media screen and (min-width: 1280px) {
+      .production-francaise .row-production {
+        margin-bottom: 50px !important; } }
+  .production-francaise .equerre {
+    bottom: 37px;
+    z-index: 0;
+    width: 216px;
+    position: relative; }
+  @media screen and (min-width: 1280px) {
+    .production-francaise .usine-img {
+      text-align: center; } }
+  .production-francaise img {
+    width: 100%;
+    /*margin-bottom: 60px;*/ }
+  .production-francaise h5 {
+    font-family: 'DIN Condensed';
+    color: #FFF;
+    text-transform: uppercase;
+    padding-left: 10px;
+    z-index: 1;
+    position: relative; }
+  .production-francaise .france_map {
+    text-align: center; }
+  .production-francaise .map-lg {
+    width: 50%; }
+
+.sur-mesure {
+  position: relative; }
+  @media screen and (min-width: 1280px) {
+    .sur-mesure {
+      height: 600px;
+      padding-top: 40px; } }
+  .sur-mesure p {
+    line-height: 25px;
+    margin-bottom: 50px; }
+    @media screen and (min-width: 768px) {
+      .sur-mesure p {
+        width: 56%;
+        float: right; } }
+    @media screen and (min-width: 1000px) {
+      .sur-mesure p {
+        width: 54%; } }
+  @media screen and (min-width: 768px) {
+    .sur-mesure h3 {
+      text-align: right;
+      width: 82.4%;
+      font-size: 55px;
+      margin-bottom: 30px; } }
+  @media screen and (min-width: 1000px) {
+    .sur-mesure h3 {
+      width: 74.2%; } }
+  @media screen and (min-width: 1200px) {
+    .sur-mesure h3 {
+      width: 71%; } }
+  @media screen and (min-width: 768px) {
+    .sur-mesure .number {
+      text-align: center;
+      font-size: 120px; } }
+  .sur-mesure .center {
+    width: 100%;
+    text-align: center;
+    height: 0; }
+    @media screen and (min-width: 768px) {
+      .sur-mesure .center {
+        clear: both; } }
+  .sur-mesure .video_sur-mesure {
+    width: 100%;
+    position: relative;
+    z-index: 1; }
+    @media screen and (min-width: 1280px) {
+      .sur-mesure .video_sur-mesure {
+        top: -200px;
+        width: 40%;
+        position: relative;
+        bottom: 200px; } }
+  .sur-mesure .play-btn {
+    position: relative;
+    top: 60px;
+    z-index: 2; }
+    @media screen and (min-width: 768px) {
+      .sur-mesure .play-btn {
+        top: 140px; } }
+    @media screen and (min-width: 1280px) {
+      .sur-mesure .play-btn {
+        top: -110px; } }
+  .sur-mesure .red-form {
+    background-color: #ea0028;
+    width: 130px;
+    height: 80px;
+    float: right;
+    right: -20px;
+    bottom: 62px;
+    position: relative; }
+    @media screen and (min-width: 1280px) {
+      .sur-mesure .red-form {
+        right: 620px;
+        bottom: 22px; } }
+
+.qualite-de-fabrication {
+  clear: both;
+  background-color: #F8F8F8;
+  text-align: right;
+  height: 700px; }
+  @media screen and (min-width: 768px) {
+    .qualite-de-fabrication {
+      height: 895px; } }
+  @media screen and (min-width: 1200px) {
+    .qualite-de-fabrication {
+      height: 675px; } }
+  .qualite-de-fabrication .number {
+    background-color: #404040;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    color: #5E5752;
+    position: relative;
+    margin-left: 20px;
+    z-index: 1;
+    clear: both; }
+    @media screen and (min-width: 768px) {
+      .qualite-de-fabrication .number {
+        top: 90px;
+        margin-left: -30px; } }
+  .qualite-de-fabrication h3 {
+    width: 240px;
+    float: right;
+    text-align: right;
+    margin-top: 60px; }
+    @media screen and (min-width: 768px) {
+      .qualite-de-fabrication h3 {
+        float: left;
+        text-align: left;
+        font-size: 55px;
+        line-height: 55px; } }
+  .qualite-de-fabrication .made-in-france {
+    z-index: 0;
+    padding: 5px;
+    position: relative;
+    top: -150px;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 768px) {
+      .qualite-de-fabrication .made-in-france {
+        float: left;
+        text-align: left;
+        top: -155px; }
+        .qualite-de-fabrication .made-in-france img {
+          width: 120px; } }
+  .qualite-de-fabrication .fabrication-bkg {
+    top: -110px;
+    position: relative;
+    height: 470px;
+    max-height: 470px;
+    overflow: hidden; }
+    @media screen and (min-width: 768px) {
+      .qualite-de-fabrication .fabrication-bkg {
+        height: 630px;
+        max-height: 530px;
+        width: 90%;
+        float: right;
+        right: -90px; } }
+  @media screen and (min-width: 768px) and (min-width: 1280px) {
+    .qualite-de-fabrication .fabrication-bkg {
+      width: 100%;
+      right: -150px; } }
+
+    .qualite-de-fabrication .fabrication-bkg img {
+      width: 100%;
+      position: relative; }
+  .qualite-de-fabrication p {
+    position: relative;
+    background-color: #FFF;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    bottom: 500px;
+    margin: 0 20px;
+    z-index: 1;
+    text-align: left; }
+    @media screen and (min-width: 768px) {
+      .qualite-de-fabrication p {
+        bottom: 440px;
+        margin-left: 0;
+        width: 70%;
+        padding: 40px;
+        line-height: 22px;
+        clear: both;
+        margin-left: -30px; } }
+    @media screen and (min-width: 1280px) {
+      .qualite-de-fabrication p {
+        bottom: 470px; } }
+
+.distributeur-fabriquant {
+  position: relative; }
+  @media screen and (min-width: 1280px) {
+    .distributeur-fabriquant {
+      height: 600px;
+      padding-top: 40px; } }
+  .distributeur-fabriquant p {
+    line-height: 25px;
+    margin-bottom: 50px; }
+    @media screen and (min-width: 768px) {
+      .distributeur-fabriquant p {
+        width: 56%;
+        float: right; } }
+    @media screen and (min-width: 1000px) {
+      .distributeur-fabriquant p {
+        width: 54%; } }
+  @media screen and (min-width: 768px) {
+    .distributeur-fabriquant h3 {
+      text-align: right;
+      width: 89.4%;
+      font-size: 55px;
+      margin-bottom: 30px; } }
+  @media screen and (min-width: 1000px) {
+    .distributeur-fabriquant h3 {
+      width: 91.2%; } }
+  @media screen and (min-width: 1200px) {
+    .distributeur-fabriquant h3 {
+      width: 86%; } }
+  @media screen and (min-width: 768px) {
+    .distributeur-fabriquant .number {
+      text-align: center;
+      font-size: 120px; } }
+  .distributeur-fabriquant .center {
+    width: 100%;
+    text-align: center;
+    height: 0; }
+    @media screen and (min-width: 768px) {
+      .distributeur-fabriquant .center {
+        clear: both; } }
+  .distributeur-fabriquant .video_sur-mesure {
+    width: 100%;
+    position: relative;
+    z-index: 1; }
+    @media screen and (min-width: 1280px) {
+      .distributeur-fabriquant .video_sur-mesure {
+        top: -200px;
+        width: 40%;
+        position: relative;
+        bottom: 200px; } }
+  .distributeur-fabriquant .play-btn {
+    position: relative;
+    top: 60px;
+    z-index: 2; }
+    @media screen and (min-width: 768px) {
+      .distributeur-fabriquant .play-btn {
+        top: 140px; } }
+    @media screen and (min-width: 1280px) {
+      .distributeur-fabriquant .play-btn {
+        top: -110px; } }
+  .distributeur-fabriquant .red-form {
+    background-color: #ea0028;
+    width: 130px;
+    height: 80px;
+    float: right;
+    right: -20px;
+    bottom: 62px;
+    position: relative; }
+    @media screen and (min-width: 1280px) {
+      .distributeur-fabriquant .red-form {
+        right: 620px;
+        bottom: 22px; } }
+
+/*.distributeur-fabriquant{
+    position: relative;  
+    background-color: #F8F8F8;
+     @media screen and (min-width: 768px) { 
+     background-color: #FFF; 
+     }
+        p{
+        line-height: 25px;
+        margin-bottom: 50px;
+    }
+    .center{
+        width: 100%;
+        text-align: center;
+        height: 0;
+        
+    }
+    h3{
+        @media screen and (min-width: 768px) {  
+            text-align: left;
+            width: 70%;
+            line-height: 55px;
+            font-size: 55px;
+            margin-bottom: 30px;
+        }
+    }
+     .number{
+        @media screen and (min-width: 768px) {  
+            text-align: left;
+            font-size: 120px;
+        }
+    }
+    p{
+        @media screen and (min-width: 768px) { 
+        line-height: 25px;
+        width: 80%;
+         }
+    }
+    .video_sur-mesure{
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        @media screen and (min-width: 768px) { 
+        width: 70%;
+        float: right;
+        }
+    }
+    .play-btn{
+    position: relative;
+    top: 60px;
+    z-index: 2;
+    @media screen and (min-width: 768px) {  
+        top: 100px;
+        right: -100px;
+    }    
+    }
+    .red-form{
+        background-color: $brand-color;
+        width: 130px;
+        height: 80px;
+        float: right;
+        right: -20px;
+        bottom: 62px;
+        position: relative;  
+        @media screen and (min-width: 768px) { 
+            clear: both;
+        }  
+    }
+}
+*/
+/*GENERAL*/
+@media screen and (min-width: 1280px) {
+  .hide-lg {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  .show-xs {
+    display: block; } }
+@media screen and (min-width: 768px) {
+  .show-xs {
+    display: none; } }
+
+@media screen and (max-width: 1280px) {
+  .show-md {
+    display: none; } }
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .show-md {
+    display: block; } }
+@media screen and (min-width: 1280px) {
+  .show-md {
+    display: none; } }
+
+@media screen and (max-width: 1280px) {
+  .show-lg {
+    display: none; } }
+@media screen and (min-width: 1280px) {
+  .show-lg {
+    display: block; } }
