@@ -1,57 +1,348 @@
-{% extends "layout.html" %}
-
-{% block content %}
-
 <style>
-.textArticle {
-   max-width: initial;
-}
-
-.blockPresentation.article {
-    margin: 0;
-    display: none;
-}
-
-.desktop_view img {
-    max-width: 1280px;
-}
-
-@media screen and (max-width: 375px) {
-   .tablet_view, .desktop_view {
-       display: none;
-   }
-   .mobile_view {
-       display: block;
-   }
-}
-
-@media screen and (min-width: 375px) and (max-width: 768px) {
-   .mobile_view, .desktop_view {
-       display: none;
-   }
-   .tablet_view {
-       display: block;
-   }
-}
-
-@media screen and (min-width: 768px) {
-   .mobile_view, .tablet_view {
-       display: none;
-   }
-   .desktop_view {
-       display: block;
-   }
-}
-
+.usine .number-usine {
+  font-family: 'DIN Condensed';
+  font-size: 50px;
+  color: #E4DDD8;
+  text-align: center;
+  margin-bottom: 28px; }
+  @media screen and (min-width: 768px) {
+    .usine .number-usine {
+      font-size: 200px;
+      position: relative;
+      top: 55px; } }
 </style>
-<div class="desktop_view">
-<img src="https://www.lapeyre.fr/img/contrib/freehtml/pages/2017/la-fabrication-francaise/desktop.png" width="100%"/>
-</div>
-<div class="mobile_view">
-<img src="https://www.lapeyre.fr/img/contrib/freehtml/pages/2017/la-fabrication-francaise/mobile.png" width="100%"/>
-</div>
-<div class="tablet_view">
-<img src="https://www.lapeyre.fr/img/contrib/freehtml/pages/2017/la-fabrication-francaise/tab.png" width="100%"/>
-</div>
 
-{% endblock %}
+
+<div class="usine">
+    <!--VIDEO BACKGROUND  -->
+    <section class="video_background">
+        <div class="title">
+            <img src="img/france_map.svg" alt="france" class="france_map">
+            <h1>La fabrication française</h1>
+            <p>Depuis sa fondation en 1931, la fabrication française, <span>la qualité et le savoir bien faire </span>sont les piliers du groupe Lapeyre. </p>
+        </div>
+    </section>
+    <div class="scroll">
+        <p>scroll</p>
+        <div class="line"></div>
+    </div>
+    <section class="production-francaise">
+        <div class="container">
+            <div class="row row-production">
+                <div class="col-lg-6">
+                    <h2 class="number">01</h2>
+                    <h3>Une production française,
+            une présence régionale</h3>
+                    <p>Grâce à ses 10 usines françaises et ses 131 points de vente répartis sur tout le territoire, Lapeyre rend le savoir bien faire accessible à tous. De nombreux magasins et un SAV toujours disponible nous permettent d’être toujours au plus près de nos clients.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="usine-img">
+                        <span class="span-one">Usine Lapeyre de Cougnaud</span>
+                        <img src="img/usine_lapeyre.png" alt="">
+                        <div class="text-left">
+                        <span class="span two  ">650 portes et fenêtres<br> fabrquées par jour</span>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5 class="hide-lg">implatation des sites</h3>
+        <div class="equerre hide-lg">
+          <img src="img/equerre.svg" alt="">
+        </div>
+     
+                  <!-- <img src="img/france_map2.svg" alt="france" class="france_map"> -->
+        <div class="france_map">  
+           <div class="show-xs">
+        <svg width="323px" height="430px" viewBox="0 0 323 430" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    
+    <defs>
+        <filter x="-14.6%" y="-6.0%" width="131.2%" height="118.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="mobile-375" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Usine" transform="translate(-19.000000, -1623.000000)">
+            <g id="partie-1" transform="translate(-14.000000, 599.000000)">
+                <g id="map" transform="translate(25.000000, 1022.000000)">
+                    <g id="Map" transform="translate(0.000000, 2.000000)">
+                        <g id="carte" fill="#DDDDDD" opacity="0.5">
+                            <path d="M186.375594,0.410770594 L166.62364,6.9946196 C165.494189,7.37096741 164.742307,8.4397952 164.769567,9.62986802 L165.237459,30.2268753 C165.261057,31.2647815 164.689822,32.2257908 163.766244,32.7005993 L131.379989,49.3567364 C129.404672,50.3722652 129.420539,53.201587 131.407249,54.1951453 L133.749963,55.3665024 C135.7798,56.3812175 135.740335,59.291505 133.684052,60.2508867 L123.030764,65.2223397 C122.495333,65.4725601 121.892769,65.5405061 121.315025,65.4168199 L100.700522,60.9995137 C99.6711601,60.7789943 98.8623175,59.9827644 98.6255235,58.957064 L96.1859759,48.3839282 C95.901579,47.1527622 94.8058983,46.2812628 93.5425902,46.2812628 L84.3104732,46.2812628 C82.5316704,46.2812628 81.2341859,47.9640461 81.6870238,49.6838539 L90.9553516,84.9030926 C91.4029004,86.6049984 90.1371511,88.2759827 88.3778777,88.3060905 L60.6811197,88.775203 C59.7892771,88.7906638 58.946258,88.3658993 58.4279152,87.6400566 L52.0291886,78.6817581 C51.3904145,77.7870674 50.2747975,77.3667785 49.2043423,77.6169989 L10.8660956,86.5793661 C9.50066505,86.8983463 8.60312637,88.2064092 8.79719979,89.5954378 L11.5675266,109.449107 C11.6928402,110.34746 12.2587859,111.123753 13.0761727,111.517596 L71.6769857,139.771349 C72.8109115,140.318579 73.4199846,141.574157 73.146573,142.803695 L71.6090396,149.723613 C71.4764025,150.320073 71.548824,150.943386 71.8153189,151.493464 L79.6868878,167.762268 L92.6186055,195.241355 C92.8285466,195.687683 92.9127671,196.183242 92.8623161,196.673918 L85.2922324,270.211467 C85.2381197,270.739575 85.0298061,271.240422 84.6933308,271.65176 L77.2070608,280.801691 C76.1764781,282.06093 76.4787769,283.936973 77.8527516,284.809287 L109.476546,304.887951 C109.857777,305.130441 110.293119,305.272843 110.743923,305.304171 L139.416744,307.281523 C140.895689,307.383646 142.183002,306.278607 142.306282,304.800476 L142.311571,304.734564 C142.469027,302.848349 144.460212,301.698963 146.171882,302.506178 L180.610352,318.741212 C181.054646,318.950747 181.547763,319.035374 182.036812,318.986551 L206.104356,316.579959 C207.631718,316.426979 208.728212,315.038764 208.522747,313.517505 L206.339523,297.36425 C206.214616,296.434976 206.577537,295.506516 207.300532,294.909241 L230.440023,275.794434 C231.127621,275.226047 232.051199,275.031974 232.909272,275.276498 L286.544735,290.525705 C287.3727,290.760871 288.263729,290.589175 288.945223,290.063102 L323.927261,263.031564 C324.177889,262.837491 324.392712,262.601511 324.561967,262.333388 L330.08065,253.594796 C330.606316,252.762762 330.640086,251.711429 330.168939,250.847253 L328.295744,247.41374 C327.871793,246.635819 327.094686,246.114628 326.214235,246.016575 L310.473539,244.26788 C308.970182,244.101066 307.894031,242.736042 308.081594,241.235533 L309.331476,231.236074 C309.37501,230.889834 309.350598,230.538304 309.260682,230.201015 L307.388301,223.178162 C307.257291,222.688706 306.992016,222.244819 306.622585,221.898172 L301.983946,217.549626 C300.417118,216.080852 301.097393,213.459844 303.180935,212.93906 L307.341918,211.898713 C308.549893,211.596821 309.396981,210.511718 309.396981,209.267126 L309.396981,203.510428 C309.396981,202.889149 309.183785,202.286179 308.79279,201.80364 L301.284142,192.528803 C300.528192,191.594646 300.47652,190.274784 301.157201,189.284888 L305.128993,183.507847 C305.713654,182.657505 305.764919,181.549211 305.26163,180.648011 L296.856258,165.606304 C296.149131,164.340962 294.571725,163.854761 293.275054,164.5033 L290.825742,165.728363 C288.385787,166.948137 285.873818,164.208731 287.300278,161.883512 L307.439565,129.048081 C307.637707,128.724218 307.901761,128.445518 308.215045,128.230694 L315.602854,123.151423 C316.22332,122.725031 316.638319,122.060217 316.749393,121.316066 L323.9533,72.9478448 C324.154697,71.5938064 323.315747,70.302018 321.997106,69.935028 L261.021029,52.9676411 C260.876593,52.9273617 260.736632,52.8756902 260.601147,52.8122196 L228.070456,37.631366 C227.807216,37.5084935 227.565539,37.3445279 227.354785,37.1455721 L189.096283,1.01211337 C188.36922,0.325736331 187.32399,0.09463843 186.375594,0.410770594" id="Page-1"></path>
+                        </g>
+                        <text id="Aubervilliers" font-family="Gotham-Book, Gotham" font-size="12" font-weight="300" fill="#000000">
+                            <tspan x="79.989" y="84.538">AUBERVILLIERS</tspan>
+                        </text>
+                        <g id="usine" transform="translate(74.615000, 23.115000)" fill="#A78F80">
+                            <rect id="Rectangle" transform="translate(213.300544, 54.451368) rotate(-45.000000) translate(-213.300544, -54.451368) " x="209.792311" y="50.9428645" width="7.01646526" height="7.01700767" rx="2.106"></rect>
+                            <rect id="Rectangle-Copy-13" transform="translate(226.631828, 94.448312) rotate(-45.000000) translate(-226.631828, -94.448312) " x="223.123595" y="90.9398082" width="7.01646526" height="7.01700767" rx="2.106"></rect>
+                            <rect id="Rectangle-Copy-2" transform="translate(164.185287, 60.064974) rotate(-45.000000) translate(-164.185287, -60.064974) " x="160.677054" y="56.5564706" width="7.01646526" height="7.01700767" rx="2.106"></rect>
+                            <rect id="Rectangle-Copy-3" transform="translate(171.201752, 67.081982) rotate(-45.000000) translate(-171.201752, -67.081982) " x="167.69352" y="63.5734783" width="7.01646526" height="7.01700767" rx="2.106"></rect>
+                            <rect id="Rectangle-Copy-4" transform="translate(181.024804, 60.766675) rotate(-45.000000) translate(-181.024804, -60.766675) " x="177.516571" y="57.2581714" width="7.01646526" height="7.01700767" rx="2.106"></rect>
+                            <rect id="Rectangle-Copy-5" transform="translate(121.086495, 5.613606) rotate(-45.000000) translate(-121.086495, -5.613606) " x="117.578263" y="2.1051023" width="7.01646526" height="7.01700767" rx="2.106"></rect>
+                            <rect id="Rectangle-Copy-6" transform="translate(17.541163, 128.831650) rotate(-45.000000) translate(-17.541163, -128.831650) " x="14.0329305" y="125.323146" width="7.01646526" height="7.01700767" rx="2.106"></rect>
+                            <rect id="Rectangle-Copy-10" transform="translate(5.613172, 135.146957) rotate(-45.000000) translate(-5.613172, -135.146957) " x="2.10493958" y="131.638453" width="7.01646526" height="7.01700767" rx="2.106"></rect>
+                            <rect id="Rectangle-Copy-7" transform="translate(164.886934, 165.320090) rotate(-45.000000) translate(-164.886934, -165.320090) " x="161.378701" y="161.811586" width="7.01646526" height="7.01700767" rx="2.106"></rect>
+                            <rect id="Rectangle-Copy-8" transform="translate(112.965091, 201.106829) rotate(-45.000000) translate(-112.965091, -201.106829) " x="109.456858" y="197.598325" width="7.01646526" height="7.01700767" rx="2.106"></rect>
+                            <rect id="Rectangle-Copy-9" transform="translate(84.899230, 260.751394) rotate(-45.000000) translate(-84.899230, -260.751394) " x="81.390997" y="257.24289" width="7.01646526" height="7.01700767" rx="2.106"></rect>
+                        </g>
+                        <g id="service-support" transform="translate(82.805000, 87.655000)" fill="#EA0028">
+                            <rect id="Rectangle-Copy-11" x="0" y="44.4279452" width="7.00509554" height="7.05205479" rx="2.106"></rect>
+                            <rect id="Rectangle-Copy-12" x="102.974904" y="0" width="7.00509554" height="7.05205479" rx="2.106"></rect>
+                        </g>
+                        <g id="CALL-CENTER-SAV" transform="translate(125.000000, 72.000000)" fill="#AA192D">
+                            <circle id="Oval" cx="172.5" cy="3.5" r="3.5"></circle>
+                            <circle id="Oval-Copy" cx="155.5" cy="211.5" r="3.5"></circle>
+                            <circle id="Oval-Copy-2" cx="3.5" cy="53.5" r="3.5"></circle>
+                            <circle id="Oval-Copy-2" cx="69.5" cy="29.5" r="3.5"></circle>
+                        </g>
+                    </g>
+                    <g id="légende" transform="translate(46.000000, 380.000000)">
+                        <text id="Call-center-sav" font-family="Gotham-Book, Gotham" font-size="13" font-weight="300" fill="#2B2B2B">
+                            <tspan x="17" y="41">Call center sav</tspan>
+                        </text>
+                        <circle id="Oval-Copy-3" fill="#AA192D" cx="5" cy="47" r="5"></circle>
+                        <text id="USINES" font-family="Gotham-Book, Gotham" font-size="13" font-weight="300" fill="#2B2B2B">
+                            <tspan x="202" y="1">USINES</tspan>
+                        </text>
+                        <rect id="Rectangle-Copy-14" fill="#A78F80" transform="translate(187.071068, 7.071068) rotate(-45.000000) translate(-187.071068, -7.071068) " x="182.071068" y="2.07106781" width="10" height="10" rx="3"></rect>
+                        <text id="services-supports" font-family="Gotham-Book, Gotham" font-size="13" font-weight="300" fill="#2B2B2B">
+                            <tspan x="17" y="1">services supports</tspan>
+                        </text>
+                        <rect id="Path" fill="#EA0028" x="0" y="2" width="10" height="10" rx="3"></rect>
+                    </g>
+                    <g id="Région-ile-de-france" transform="translate(55.000000, 0.000000)">
+                        <g id="fleche-copy-2" filter="url(#filter-1)" transform="translate(97.435268, 49.519272) scale(-1, 1) rotate(23.000000) translate(-97.435268, -49.519272) translate(73.435268, 8.019272)" stroke="#404040">
+                            <path d="M3.86306938,82 C27.8040384,70.5462436 53.7117328,48.8934121 46.7974081,0.764288749" id="Path-2" transform="translate(25.898704, 41.382144) rotate(-180.000000) translate(-25.898704, -41.382144) "></path>
+                            <polyline id="Path-3" transform="translate(8.396376, 78.165208) rotate(-177.000000) translate(-8.396376, -78.165208) " points="1.05721017 79.7522664 11.5766817 73.780066 15.7355425 82.5503491"></polyline>
+                        </g>
+                        <text id="Siège" font-family="Belinda" font-size="26" font-weight="normal" fill="#2B2B2B">
+                            <tspan x="0" y="25">Siège </tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+        </svg>
+        </div>
+
+           <div class="show-md">
+          <svg width="559px" height="631px" viewBox="0 0 559 631" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-4.6%" y="-3.5%" width="109.9%" height="109.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="tablette-768" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Usine" transform="translate(-102.000000, -2077.000000)">
+            <g id="partie-1" transform="translate(0.000000, 894.000000)">
+                <g id="map" transform="translate(82.000000, 1159.000000)">
+                    <g id="Map" transform="translate(0.000000, 24.000000)">
+                        <g id="carte" fill="#DDDDDD">
+                            <path d="M325.066185,0.824811802 L291.216945,12.1076595 C289.281387,12.7526128 287.992875,14.5842802 288.039591,16.6237271 L288.841425,51.9211491 C288.881865,53.6998257 287.902931,55.3467226 286.32018,56.1604097 L230.819335,84.7042992 C227.434202,86.4446272 227.461394,91.2932815 230.86605,92.9959581 L234.880798,95.0033317 C238.359362,96.7422652 238.291729,101.729672 234.767844,103.37378 L216.511133,111.893438 C215.593557,112.322245 214.560934,112.438685 213.570844,112.226722 L178.24344,104.656714 C176.479406,104.278806 175.093279,102.914294 174.687481,101.156535 L170.506789,83.0371821 C170.019414,80.9273133 168.141728,79.4338106 165.976777,79.4338106 L150.15555,79.4338106 C147.107187,79.4338106 144.883667,82.3176234 145.659702,85.2648856 L161.542985,145.62066 C162.309956,148.537244 160.140821,151.400836 157.125926,151.452433 L109.661547,152.256358 C108.133182,152.282854 106.688487,151.554928 105.800195,150.31104 L94.8345941,134.95906 C93.7399167,133.425814 91.8280659,132.705558 89.9936096,133.134365 L24.2927408,148.493317 C21.9527806,149.039959 20.4146541,151.281607 20.7472408,153.662008 L25.4947943,187.68556 C25.7095463,189.225081 26.6794166,190.555428 28.0801854,191.230363 L128.505339,239.649272 C130.448566,240.587069 131.492345,242.738773 131.023795,244.845853 L128.388899,256.704626 C128.161597,257.72679 128.285707,258.794972 128.742403,259.73765 L142.232037,287.61776 L164.393329,334.709112 C164.753109,335.473992 164.897439,336.323238 164.81098,337.164118 L151.838006,463.186597 C151.745273,464.091623 151.388282,464.949934 150.811659,465.65485 L137.982318,481.335234 C136.216192,483.493212 136.734246,486.708217 139.088849,488.203115 L193.283053,522.612244 C193.936374,523.027803 194.682428,523.27184 195.454977,523.325528 L244.592051,526.714147 C247.126543,526.889156 249.332632,524.995434 249.543898,522.462336 L249.552962,522.349382 C249.822797,519.116946 253.235122,517.147224 256.16844,518.530561 L315.186198,546.3528 C315.947591,546.711883 316.792654,546.85691 317.630745,546.77324 L358.875682,542.649025 C361.493147,542.386861 363.372227,540.007855 363.020117,537.400849 L359.278691,509.718756 C359.064636,508.126245 359.68658,506.535127 360.925588,505.511569 L400.580105,472.754217 C401.758452,471.780163 403.341203,471.447577 404.811696,471.866622 L496.72765,497.999432 C498.146547,498.402441 499.673518,498.108203 500.841406,497.206662 L560.790686,450.882282 C561.22019,450.549696 561.588337,450.145292 561.878391,449.685807 L571.335847,434.71034 C572.23669,433.28447 572.294561,431.482785 571.487149,430.001832 L568.277025,424.117767 C567.550494,422.784631 566.218753,421.891458 564.70991,421.723421 L537.734826,418.726654 C535.158499,418.440783 533.314282,416.10152 533.635712,413.530074 L535.777654,396.393839 C535.85226,395.800482 535.810425,395.198061 535.656334,394.620043 L532.447604,382.584866 C532.22309,381.746079 531.768485,380.985382 531.135385,380.391328 L523.186074,372.939154 C520.500977,370.422093 521.666774,365.930429 525.237375,365.037953 L532.368118,363.255093 C534.438243,362.737736 535.889911,360.878179 535.889911,358.745301 L535.889911,348.879956 C535.889911,347.81526 535.524554,346.78194 534.8545,345.955006 L521.98681,330.060568 C520.691325,328.459689 520.602775,326.19782 521.769269,324.501419 L528.575792,314.601212 C529.577736,313.143966 529.665589,311.244665 528.803095,309.700264 L514.398673,283.92305 C513.186858,281.754612 510.483632,280.921402 508.261507,282.032814 L504.064081,284.132224 C499.882692,286.22257 495.57789,281.528007 498.022437,277.543241 L532.535457,221.272636 C532.875016,220.717627 533.327529,220.240013 533.864409,219.871867 L546.525017,211.167438 C547.588318,210.436723 548.29951,209.297422 548.489858,208.022157 L560.83531,125.13276 C561.180447,122.812323 559.742724,120.598564 557.482947,119.969648 L452.987267,90.8923645 C452.739744,90.8233371 452.499891,90.7347868 452.267708,90.6260163 L396.51934,64.6103436 C396.068221,64.3997751 395.654057,64.1187846 395.292883,63.777831 L329.728674,1.85534257 C328.482694,0.67908722 326.691467,0.283051037 325.066185,0.824811802" id="Page-1"></path>
+                        </g>
+                        <g id="nom-ville" transform="translate(143.000000, 47.000000)" font-size="12" font-family="Gotham-Book, Gotham" fill="#000000" font-weight="300">
+                            <text id="Aubervilliers">
+                                <tspan x="66.4" y="100.8">Aubervilliers</tspan>
+                            </text>
+                            <text id="SBL">
+                                <tspan x="181" y="0">SBL</tspan>
+                            </text>
+                            <text id="Pastural">
+                                <tspan x="195" y="58.6">Pastural</tspan>
+                            </text>
+                            <text id="Cordier">
+                                <tspan x="271" y="106.6">Cordier</tspan>
+                            </text>
+                            <text id="Poreaux">
+                                <tspan x="275" y="59">Poreaux</tspan>
+                            </text>
+                            <text id="Azur-production">
+                                <tspan x="352" y="81">Azur</tspan>
+                                <tspan x="352" y="81.0001">production</tspan>
+                            </text>
+                            <text id="grigny">
+                                <tspan x="164.4" y="135.4">grigny</tspan>
+                            </text>
+                            <text id="tours">
+                                <tspan x="97.4" y="163.4">tours</tspan>
+                            </text>
+                            <text id="Gémenos">
+                                <tspan x="308.4" y="410.4">Gémenos</tspan>
+                            </text>
+                            <text id="Nancy">
+                                <tspan x="375.4" y="63.4">Nancy</tspan>
+                            </text>
+                            <text id="technifen">
+                                <tspan x="334.8" y="163.6">technifen</tspan>
+                            </text>
+                            <text id="giraud">
+                                <tspan x="201.2" y="266.6">giraud</tspan>
+                            </text>
+                            <text id="menuiseries-du-centr">
+                                <tspan x="188" y="322.4">menuiseries</tspan>
+                                <tspan x="188" y="322.4001">du centre</tspan>
+                            </text>
+                            <text id="Lagrange">
+                                <tspan x="100.6" y="411.6">Lagrange</tspan>
+                            </text>
+                            <text id="Nantes">
+                                <tspan x="12.8" y="176.4">Nantes</tspan>
+                            </text>
+                            <text id="ouest-production">
+                                <tspan x="0" y="230.4">ouest production</tspan>
+                            </text>
+                            <text id="cougnaud-/-slc">
+                                <tspan x="23.8" y="205.2">cougnaud / slc</tspan>
+                            </text>
+                        </g>
+                        <g id="usine" transform="translate(126.000000, 25.000000)" fill="#A78F80">
+                            <rect id="Rectangle" transform="translate(363.616314, 94.754476) rotate(-45.000000) translate(-363.616314, -94.754476) " x="357.619335" y="88.7570332" width="11.9939577" height="11.9948849" rx="3.6"></rect>
+                            <rect id="Rectangle-Copy-13" transform="translate(386.404834, 174.125320) rotate(-45.000000) translate(-386.404834, -174.125320) " x="380.407855" y="168.127877" width="11.9939577" height="11.9948849" rx="3.6"></rect>
+                            <rect id="Rectangle-Copy-2" transform="translate(279.658610, 104.350384) rotate(-45.000000) translate(-279.658610, -104.350384) " x="273.661631" y="98.3529412" width="11.9939577" height="11.9948849" rx="3.6"></rect>
+                            <rect id="Rectangle-Copy-3" transform="translate(291.652568, 116.345269) rotate(-45.000000) translate(-291.652568, -116.345269) " x="285.655589" y="110.347826" width="11.9939577" height="11.9948849" rx="3.6"></rect>
+                            <rect id="Rectangle-Copy-4" transform="translate(308.444109, 105.549872) rotate(-45.000000) translate(-308.444109, -105.549872) " x="302.44713" y="99.5524297" width="11.9939577" height="11.9948849" rx="3.6"></rect>
+                            <rect id="Rectangle-Copy-5" transform="translate(207.694864, 8.595908) rotate(-45.000000) translate(-207.694864, -8.595908) " x="201.697885" y="2.59846547" width="11.9939577" height="11.9948849" rx="3.6"></rect>
+                            <rect id="Rectangle-Copy-6" transform="translate(28.984894, 232.900256) rotate(-45.000000) translate(-28.984894, -232.900256) " x="22.9879154" y="226.902813" width="11.9939577" height="11.9948849" rx="3.6"></rect>
+                            <rect id="Rectangle-Copy-10" transform="translate(8.595166, 243.695652) rotate(-45.000000) translate(-8.595166, -243.695652) " x="2.59818731" y="237.69821" width="11.9939577" height="11.9948849" rx="3.6"></rect>
+                            <rect id="Rectangle-Copy-7" transform="translate(280.858006, 295.273657) rotate(-45.000000) translate(-280.858006, -295.273657) " x="274.861027" y="289.276215" width="11.9939577" height="11.9948849" rx="3.6"></rect>
+                            <rect id="Rectangle-Copy-8" transform="translate(192.102719, 356.447570) rotate(-45.000000) translate(-192.102719, -356.447570) " x="186.10574" y="350.450128" width="11.9939577" height="11.9948849" rx="3.6"></rect>
+                            <rect id="Rectangle-Copy-9" transform="translate(144.126888, 458.404092) rotate(-45.000000) translate(-144.126888, -458.404092) " x="138.129909" y="452.40665" width="11.9939577" height="11.9948849" rx="3.6"></rect>
+                        </g>
+                        <g id="CALL-CENTER-SAV" transform="translate(220.000000, 112.000000)" fill="#AA192D">
+                            <circle id="Oval" cx="287" cy="6" r="6"></circle>
+                            <circle id="Oval-Copy" cx="265" cy="373" r="6"></circle>
+                            <circle id="Oval-Copy-2" cx="6" cy="106" r="6"></circle>
+                            <circle id="Oval-Copy-2" cx="111" cy="60" r="6"></circle>
+                        </g>
+                        <g id="service-support" transform="translate(139.000000, 148.000000)" fill="#EA0028">
+                            <rect id="Rectangle-Copy-11" x="0" y="75.9452055" width="11.9745223" height="12.0547945" rx="3.6"></rect>
+                            <rect id="Rectangle-Copy-12" x="176.025478" y="0" width="11.9745223" height="12.0547945" rx="3.6"></rect>
+                        </g>
+                        <g id="légende" transform="translate(95.000000, 618.000000)">
+                            <text id="call-center-sav" font-family="Gotham-Book, Gotham" font-size="12" font-weight="300" fill="#2B2B2B">
+                                <tspan x="296" y="1">call center sav</tspan>
+                            </text>
+                            <circle id="Oval-Copy-3" fill="#AA192D" cx="283" cy="7" r="5"></circle>
+                            <text id="USINES" font-family="Gotham-Book, Gotham" font-size="12" font-weight="300" fill="#2B2B2B">
+                                <tspan x="202" y="1">USINES</tspan>
+                            </text>
+                            <rect id="Rectangle-Copy-14" fill="#A78F80" transform="translate(187.071068, 7.071068) rotate(-45.000000) translate(-187.071068, -7.071068) " x="182.071068" y="2.07106781" width="10" height="10" rx="3"></rect>
+                            <text id="services-supports" font-family="Gotham-Book, Gotham" font-size="12" font-weight="300" fill="#2B2B2B">
+                                <tspan x="17" y="1">services supports</tspan>
+                            </text>
+                            <rect id="Path" fill="#EA0028" x="0" y="2" width="10" height="10" rx="3"></rect>
+                        </g>
+                    </g>
+                    <g id="Région-ile-de-france" transform="translate(40.000000, 0.000000)">
+                        <g id="fleche-copy-2" filter="url(#filter-1)" transform="translate(168.572212, 108.795330) scale(-1, 1) rotate(23.000000) translate(-168.572212, -108.795330) translate(92.572212, 23.795330)" stroke="#404040">
+                            <path d="M5,169 C87.9251018,142.63927 126.970725,97.1490479 151.970725,0.149047907" id="Path-2" transform="translate(78.485362, 84.574524) rotate(-180.000000) translate(-78.485362, -84.574524) "></path>
+                            <polyline id="Path-3" transform="translate(8.396376, 165.165208) rotate(-177.000000) translate(-8.396376, -165.165208) " points="1.05721017 166.752266 11.5766817 160.780066 15.7355425 169.550349"></polyline>
+                        </g>
+                        <text id="Siège" font-family="Belinda" font-size="26" font-weight="normal" fill="#2B2B2B">
+                            <tspan x="0" y="66">Siège </tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+          </svg>
+          </div>
+      
+        <div class="show-lg text-center">
+        <img src="img/map-lg.png" alt="france" class="map-lg">
+        </div>
+        </div>
+    </section>
+
+      <section class="sur-mesure">
+      <div class="container">
+      <div class="row">
+        <div class="">
+          <h2 class="number">02</h2>
+         <h3>Le sur-mesure </h3>
+         <p>Le savoir bien faire, c’est aussi s’adapter à tous les projets. Les experts à l’oeuvre dans nos usines françaises répondent à tous les besoins et réalisent avec soin vos menuiseries sur-mesure.   </p>
+        </div>
+        <div class="vid-sur-mesure">
+<!--            <div class="center"><img src="img/play-button.svg" class="play-btn" alt=""></div>
+ -->         <img src="img/video_sur-mesure2.png" class="video_sur-mesure"  alt="">
+         <div class="red-form"></div>
+        </div>
+      </div>
+       </div>
+    </section>
+    <section class="qualite-de-fabrication">
+        <div class="container">
+
+        <div class="row">
+        <div class="col-xl-4">
+          <h3>Qualité de fabrication </h3>
+          </div>
+          <div class="col-xl-8">
+        <h2 class="number">03</h2>
+              <div class="made-in-france">
+<!--               <img src="img/made-in-france.png"  alt="made-in-france">
+ -->              <div></div>
+              </div>
+               <div class="fabrication-bkg">
+            <img src="img/fabrication-bkg.png" alt="" >
+        </div>
+           <div>
+              <p>Afin de ne rien laisser au hasard et répondre à nos exigences en matière de performance, de design et d’innovation, nos produits sont régulièrement testés dans notre laboratoire de Saint-Martin-sur-le-Pré. Une quête constante de qualité, confirmée par les différentes certifications de nos usines (Origine France Garantie, ISO 9001…). </p>
+      </div>
+          </div>
+</div>
+         
+    </div>
+    </section>
+
+          <section class=" distributeur-fabriquant">
+      <div class="container">
+      <div class="row">
+        <div class="">
+          <h2 class="number">04</h2>
+         <h3>Distributeur fabriquant</h3>
+         <p>Pour garantir son Savoir Bien Faire, Lapeyre maîtrise l’ensemble de sa chaîne de production, de la conception à l’installation. Nous avons développé notre propre recette de PVC dont nous produisons 90% des matières premières bruts. Aujourd’hui, nos 10 usines françaises fabriquent plus de 60% des produits distribués sous la marque Lapeyre. </p>
+        </div>
+        <div class="vid-sur-mesure">
+<!--            <div class="center"><img src="img/play-button.svg" class="play-btn" alt=""></div>
+ -->         <img src="img/distributeur-vid2.png" class="video_sur-mesure"  alt="">
+         <div class="red-form"></div>
+        </div>
+      </div>
+       </div>
+    </section>
+<!--      <section class="distributeur-fabriquant">
+      <div class="container">
+        <h2 class="number">04</h2>
+         <h3>Distributeur fabriquant</h3>
+         <p>Pour garantir son Savoir Bien Faire, Lapeyre maîtrise l’ensemble de sa chaîne de production, de la conception à l’installation. Nous avons développé notre propre recette de PVC dont nous produisons 90% des matières premières bruts. Aujourd’hui, nos 10 usines françaises fabriquent plus de 60% des produits distribués sous la marque Lapeyre. </p>
+       <img src="img/distributeur-vid2.png" class="video_sur-mesure"  alt="">
+         <div class="red-form"></div>
+       </div>
+    </section> -->
+    
+  
+    <div style="height: 80px"></div>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/plugins/plugins.js"></script>
+    <script src="js/lapeyre.custom.js"></script>
+</div>
